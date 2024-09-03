@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>To Do List</title>
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="Container-Todo">
+      <header>
+        <h1>Lista de Tarefas</h1>
+      </header>
+
+      <form id="todo-form" class="addTodo">
+        <p>Adicionar tarefa:</p>
+        <div class="form-control">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="O que você deseja fazer?"
+          />
+          <button type="submit" class="buttonAdd">Adicionar</button>
+        </div>
+      </form>
+
+      <form id="edit-form" class="edit-form hide">
+        <p>Edite sua tarefa</p>
+        <div class="form-control">
+          <input type="text" id="edit-input" placeholder=" " />
+          <button type="submit" class="buttonEdit">Salvar</button>
+        </div>
+        <button type="button" id="cancel-edit-btn" class="buttonCancel">
+          Cancelar
+        </button>
+      </form>
+
+      <div id="toolbar">
+        <div id="search">
+          <h4>Pesquisar:</h4>
+          <form class="serch">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Digite para pesquisar"
+            />
+          </form>
+        </div>
+
+        <!--Falta implementar aqui 
+        <div id="filter">
+          <h4>Filtrar:</h4>
+          <select id="filter-select" class="filter-select">
+            <option value="All">Todos</option>
+            <option value="done">Feitos</option>
+            <option value="incomplete">Incompletas</option>
+          </select>
+        </div>
+      </div>
+      -->
+
+      <div id="todo-list" class="todo-list">
+        <!--
+        <div class="todo">
+          <h3>Estou estudando...</h3>
+          <button class="finish-todo">Finalizar</button>
+          <button class="edit-todo">Editar</button>
+          <button class="remove-todo">Remover</button>
+        </div>
+
+        <div class="todo done">
+          <h3>Estou trabalhando</h3>
+          <button class="finish-todo">Finalizar</button>
+          <button class="edit-todo">Editar</button>
+          <button class="remove-todo">Remover</button>
+        </div>
+      --></div>
+    </div>
+
+    <footer class="rodape">
+      <h3>Desenvolvido por: Lucca</h3>
+      <div class="icons">
+        <a href="https://www.instagram.com/luccasales99" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="https://github.com/Luccasales" target="_blank"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+      </div>
+    </footer>
+
+    <script src="Js/JavaScript.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

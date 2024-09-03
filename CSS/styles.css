@@ -1,0 +1,150 @@
+/* Estilos gerais */
+* {
+  font-family: "PT Sans", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Faz o body ocupar 100% da altura da viewport */
+  margin: 0; /* Remove qualquer margem padrão */
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("../img/desk-593327_1280.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+button {
+  padding: 10px;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+button:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  border-radius: 15px;
+}
+
+/* */
+.Container-Todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 50rem;
+  padding: 15rem;
+  flex-grow: 1; /* Faz o contêiner principal crescer para preencher o espaço disponível */
+}
+
+.Conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Adicionado para centralizar o conteúdo */
+  gap: 2rem;
+  width: 100%;
+  text-align: center; /* Centraliza o texto */
+}
+
+.addTodo {
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+.editForm {
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+.editForm input {
+  display: flex;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.buttonGroup {
+  display: flex;
+  margin-top: 5px; /* Faz com que ambos os botões cresçam igualmente */
+  align-items: center;
+  gap: 1rem;
+}
+
+.serch {
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+.stats {
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Garantir que a todo-list ocupe 100% da largura */
+  border-bottom: 1px solid black;
+  margin-top: 1rem;
+}
+
+.todo {
+  display: flex;
+  margin-top: 1rem;
+  gap: 5px;
+  justify-content: space-between; /* Alinha os elementos internamente */
+  padding: 8px;
+  width: 100%; /* Garantir que a todo ocupe 100% da largura */
+  box-sizing: border-box; /* Inclui o padding dentro da largura */
+  border-bottom: 1px solid black;
+  min-height: 30px;
+}
+
+.done {
+  text-decoration: line-through;
+  background-color: grey;
+  width: 100%; /* Garantir que a done ocupe 100% da largura */
+}
+
+.buttonAdd,
+.edit,
+.buttonSerch {
+  margin-top: 0.5rem;
+}
+
+.filter-select {
+  padding: 0.4rem;
+  width: 10rem;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: auto; /* Empurra o rodapé para baixo */
+  padding: 5px 0; /* Adiciona padding para espaço interno */
+  background-color: #f1f1f1; /* Adiciona uma cor de fundo se desejar */
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.rodape a {
+  color: black;
+  padding: 50px;
+  font-size: 30px;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
